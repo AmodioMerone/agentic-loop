@@ -1,0 +1,23 @@
+{
+  "name": "agent-comms-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server backing the multi-agent comms with SQLite (node:sqlite, no native deps).",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "agent-comms-mcp": "server.js"
+  },
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "retention": "node retention.js",
+    "retention:dry": "node retention.js --dry-run"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "^4.4.3"
+  }
+}

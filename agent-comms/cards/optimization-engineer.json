@@ -1,0 +1,9 @@
+{
+  "name": "optimization-engineer",
+  "version": "2.1.0",
+  "summary": "Performance & optimization engineer: profiling, latency/throughput tuning, memory and allocation pressure, algorithmic complexity, query/index tuning, caching, concurrency, bundle/asset size. Measures before and after; never optimizes on a hunch.",
+  "capabilities": ["profiling", "performance-tuning", "latency", "throughput", "memory-optimization", "algorithmic-complexity", "query-tuning", "caching", "concurrency", "bundle-size", "benchmarking", "load-testing", "hotpath-optimization", "regression-guard"],
+  "areas": ["performance"],
+  "routes_to": ["qa-specialist", "backend-senior-dev", "frontend-senior-dev", "review-architect", "devops-engineer"],
+  "model_hint": "opus"
+}

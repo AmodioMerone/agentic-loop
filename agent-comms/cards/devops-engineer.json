@@ -1,0 +1,9 @@
+{
+  "name": "devops-engineer",
+  "version": "2.1.0",
+  "summary": "DevOps / platform engineer: CI/CD pipelines, Docker, Kubernetes, Terraform/IaC, secrets management, observability stack, deploys and rollback.",
+  "capabilities": ["ci-cd", "github-actions", "dockerfile", "kubernetes", "helm", "terraform", "iac", "secrets-management", "observability", "deploy-pipeline", "rollback", "logging-stack", "metrics-tracing"],
+  "areas": ["devops"],
+  "routes_to": ["backend-senior-dev", "frontend-senior-dev", "security-auditor", "qa-specialist", "review-architect"],
+  "model_hint": "sonnet"
+}

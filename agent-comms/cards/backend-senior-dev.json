@@ -1,0 +1,9 @@
+{
+  "name": "backend-senior-dev",
+  "version": "2.1.0",
+  "summary": "Senior backend engineer: REST/GraphQL/gRPC APIs, SQL schema and migrations, background jobs and queue workers, query performance, idempotency.",
+  "capabilities": ["rest-api", "graphql", "grpc", "sql-schema", "nosql", "migrations", "background-jobs", "queue-workers", "query-tuning", "backend-perf", "idempotency", "pagination", "transactions"],
+  "areas": ["backend"],
+  "routes_to": ["qa-specialist", "security-auditor", "review-architect", "devops-engineer", "tech-writer"],
+  "model_hint": "opus"
+}

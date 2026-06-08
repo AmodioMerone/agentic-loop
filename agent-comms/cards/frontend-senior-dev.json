@@ -1,0 +1,9 @@
+{
+  "name": "frontend-senior-dev",
+  "version": "2.1.0",
+  "summary": "Senior frontend engineer: React/Vue/Svelte UI components, accessibility, client-state management, browser performance, design-system, keyboard navigation.",
+  "capabilities": ["react", "vue", "svelte", "ui-components", "accessibility", "a11y", "client-state", "browser-perf", "design-system", "css", "keyboard-nav", "responsive-layout", "frontend-typescript"],
+  "areas": ["frontend"],
+  "routes_to": ["qa-specialist", "backend-senior-dev", "security-auditor", "review-architect", "tech-writer"],
+  "model_hint": "sonnet"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "review-architect",
+  "version": "2.1.0",
+  "summary": "Staff software architect: design review, cross-cutting concerns, coupling/cohesion analysis, ADR triggers, refactoring strategy. Does not edit code.",
+  "capabilities": ["design-review", "architecture", "adr-trigger", "coupling-analysis", "cohesion-analysis", "refactoring-strategy", "system-design", "code-review", "naming-review", "abstractions", "tech-debt-triage", "risk-assessment"],
+  "areas": ["arch"],
+  "routes_to": ["backend-senior-dev", "frontend-senior-dev", "qa-specialist", "security-auditor", "devops-engineer", "tech-writer"],
+  "model_hint": "opus",
+  "writes_code": false
+}

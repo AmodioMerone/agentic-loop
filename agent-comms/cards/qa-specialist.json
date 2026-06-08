@@ -1,0 +1,9 @@
+{
+  "name": "qa-specialist",
+  "version": "2.1.0",
+  "summary": "QA / test engineer: unit + integration + e2e tests, bug reproduction, edge cases, regression coverage, flaky-test triage.",
+  "capabilities": ["unit-tests", "integration-tests", "e2e-tests", "bug-repro", "edge-cases", "regression-coverage", "test-fixtures", "property-based-tests", "flaky-test-triage", "test-plan"],
+  "areas": ["qa"],
+  "routes_to": ["backend-senior-dev", "frontend-senior-dev", "devops-engineer", "review-architect"],
+  "model_hint": "sonnet"
+}

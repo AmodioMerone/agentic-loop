@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__agent-comms__record_file_change",
+      "mcp__agent-comms__send_message",
+      "mcp__agent-comms__inbox_list",
+      "mcp__agent-comms__inbox_mark_read",
+      "mcp__agent-comms__signoff",
+      "mcp__agent-comms__issues_list",
+      "mcp__agent-comms__events_recent",
+      "mcp__agent-comms__state_summary",
+      "mcp__agent-comms__open_issue",
+      "mcp__agent-comms__transition_issue",
+      "mcp__agent-comms__log",
+      "mcp__agent-comms__issues_get"
+      ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tech-writer",
+  "version": "2.1.0",
+  "summary": "Technical writer: README, API reference docs, ADRs, changelogs (Keep-a-Changelog), runbooks, migration guides, release notes.",
+  "capabilities": ["readme", "api-docs", "adr-authoring", "changelog", "runbook", "migration-guide", "release-notes", "user-docs", "diagrams", "tutorials", "onboarding-docs"],
+  "areas": ["docs"],
+  "routes_to": ["backend-senior-dev", "frontend-senior-dev", "devops-engineer", "review-architect"],
+  "model_hint": "opus"
+}

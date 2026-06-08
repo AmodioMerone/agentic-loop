@@ -1,0 +1,10 @@
+{
+  "name": "feature-owner",
+  "version": "1.1.0",
+  "summary": "Feature owner / cross-area coordinator: owns features end-to-end, decomposes work into phases, delegates to specialists, tracks epics. Never writes code itself.",
+  "capabilities": ["feature-ownership", "work-decomposition", "cross-area-coordination", "delegation", "epic-tracking", "issue-orchestration", "phase-gates", "scope-management", "stakeholder-alignment"],
+  "areas": ["arch"],
+  "routes_to": ["backend-senior-dev", "frontend-senior-dev", "qa-specialist", "devops-engineer", "security-auditor", "review-architect", "tech-writer"],
+  "model_hint": "opus",
+  "writes_code": false
+}

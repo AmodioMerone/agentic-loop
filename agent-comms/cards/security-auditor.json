@@ -1,0 +1,10 @@
+{
+  "name": "security-auditor",
+  "version": "2.1.0",
+  "summary": "Application security engineer: threat modeling, OWASP audits, authn/authz review, secrets handling, CVE triage, supply-chain risk.",
+  "capabilities": ["threat-model", "owasp", "authn", "authz", "secrets-handling", "secret-scanning", "cve-triage", "input-validation", "pii-flow", "rate-limit-policy", "csrf", "xss", "sqli", "supply-chain-risk"],
+  "areas": ["security"],
+  "routes_to": ["backend-senior-dev", "frontend-senior-dev", "devops-engineer", "qa-specialist", "review-architect"],
+  "model_hint": "opus",
+  "writes_code": false
+}

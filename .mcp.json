@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "agent-comms": {
+      "command": "node",
+      "args": ["--no-warnings", "./mcp-server/server.js"],
+      "env": {}
+    }
+  }
+}

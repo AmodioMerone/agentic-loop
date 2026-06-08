@@ -1,0 +1,24 @@
+# === Node dependencies ===
+node_modules/
+
+# === Runtime state DB (SQLite, WAL mode) ===
+# agent-comms/state.sqlite and any WAL/SHM side-files it creates.
+# Also covers DB files produced via AGENT_COMMS_DB / AGENT_COMMS_CARDS overrides.
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# === Logs ===
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# === OS / editor cruft ===
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# === Local temp / build output ===
+*.tmp
+dist/
