@@ -8,8 +8,6 @@ shared state held in **SQLite**, served by the **`agent-comms` MCP server**.
 This README documents the orchestration environment — the team, the loop,
 and the plumbing. It is not about whatever product the team happens to build.
 
-> **Looking for the firmware/product docs?** This is the wrong file. This
-> README covers the agent harness only.
 
 ---
 
