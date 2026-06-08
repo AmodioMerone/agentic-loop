@@ -38,8 +38,7 @@ create any wiring by hand.
    ```
 
 5. **Details and overrides** live in [§6](#6-running-and-wiring): env overrides
-   (`AGENT_COMMS_DB`, `AGENT_COMMS_CARDS`), the restart-to-reload-cards note, and
-   the `optimization-engineer` registration gap in `db.js`.
+   (`AGENT_COMMS_DB`, `AGENT_COMMS_CARDS`) and the restart-to-reload-cards note.
 
 > If the `mcp__agent-comms__*` tools do **not** appear, the server isn't
 > connected — agents should report that and stop, not fall back to writing
@@ -77,7 +76,7 @@ tools).
 Nine agents are defined. Each has a definition in `.claude/agents/<name>.md`
 (model, allowed tools, expertise, collaborators, protocol, style) and a
 machine-readable capability card in `agent-comms/cards/<name>.json` used for
-deterministic routing. **All nine agents now have a capability card.**
+deterministic routing. **All nine agents have a capability card.**
 
 | Agent                   | Model  | When to call                                                      |
 | ----------------------- | ------ | ----------------------------------------------------------------- |
@@ -89,7 +88,7 @@ deterministic routing. **All nine agents now have a capability card.**
 | `security-auditor`      | opus   | Security review, threat modeling, OWASP/authn/authz, secrets, CVE triage, signoff authority |
 | `tech-writer`           | opus   | README, API docs, ADRs, changelogs, runbooks, migration guides    |
 | `feature-owner`         | opus   | Cross-area features (≥2 areas, ≥3 files, framed as feature/epic); coordinates, never codes |
-| `optimization-engineer` | opus   | Profiling and perf/latency/throughput, memory, algorithmic complexity, query/cache tuning (added today) |
+| `optimization-engineer` | opus   | Profiling and perf/latency/throughput, memory, algorithmic complexity, query/cache tuning |
 
 ### What each agent does
 
@@ -139,8 +138,8 @@ deterministic routing. **All nine agents now have a capability card.**
   before changing anything, finds the real bottleneck with a profiler, changes
   one lever at a time, re-measures, and reports the before→after delta. Pulls
   in `qa-specialist` for a regression guard and `review-architect` when an
-  optimization changes a boundary or contract. Writes code. *(Added today; its
-  card declares the `performance` area — see the wiring note in §6.)*
+  optimization changes a boundary or contract. Writes code. *(Declares the
+  `performance` area; its signoffs route to `review-architect`.)*
 
 ---
 
@@ -380,15 +379,6 @@ markdown (the pre-v3 paradigm is deprecated; see `PARADIGM-EVOLUTION.md`).
   then caches it keyed by directory. **Restart the server to pick up a new or
   edited card** — adding `optimization-engineer.json` while the server is
   running won't change routing until the next start.
-
-- **The `optimization-engineer` registration is incomplete server-side.** The
-  agent definition and capability card exist (9 of each), but
-  `mcp-server/db.js` still lists 8 agents in its `AGENTS` enum and its
-  `VALID_AREAS` does not include `performance`. Until `db.js` is extended,
-  MCP tool calls that pass `agent: "optimization-engineer"` or
-  `area: "performance"` are rejected by Zod/`assertAgent`. `route_task` (which
-  reads the cards directly) will still recommend it. Treat this as the next
-  wiring step for that role.
 
 - **Metrics depend on the `epic:<slug>` ref convention.** `feature-owner` tags
   every feature event with `refs: ["epic:<slug>"]`; a missed tag is a missed
